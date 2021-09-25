@@ -27,8 +27,6 @@ namespace SecretAgentNew
                     continue;
                 }
 
-                // if new line add ...
-
                 if (Char.IsLetter(letter) == true)
                 {
                     int letterPos = Array.IndexOf(alphabet, letter);
