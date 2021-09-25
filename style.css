@@ -1,0 +1,397 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #171717 !important;
+    color: white !important;
+}
+
+body span {
+    font-size:16px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 40px !important;
+}
+
+h3 {
+    margin:0 !important;
+}
+
+.display-1 {
+    font-size:35px !important;
+}
+
+.display-2 {
+    font-size: 30px !important;
+}
+
+.display-3 {
+    font-size: 16px !important;
+}
+
+#Button_CreateAgent, #Button_UpdateAgent, #Button_Encrypion {
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+hr {
+    margin: 50px 0 !important;
+}
+
+#ListBox_Agents {
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    overflow: auto;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    background-color: transparent !important;
+}
+
+    #ListBox_Agents option {
+        position: relative;
+        display: block;
+        padding: .75rem 1.25rem;
+        margin-bottom: -1px;
+        background-color: #fff;
+        border-bottom: 2px solid rgba(0,0,0,.125) !important;
+        /*border: 1px solid rgba(0,0,0,.125);*/
+    }
+
+        #ListBox_Agents option:last-child {
+            border-bottom: 1px solid rgba(0,0,0,.125) !important;
+        }
+
+        #ListBox_Agents option:nth-child(even) {
+            background-color: #f7f7f7;
+        }
+
+#ListBox_Agents_h {
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    overflow: auto;
+    background-color: transparent;
+    border: none !important;
+}
+
+    #ListBox_Agents_h option {
+        position: relative;
+        display: block;
+        padding: .75rem 1.25rem;
+        background-color: white;
+        border: none !important;
+    }
+
+        #ListBox_Agents_h option:first-child {
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+        }
+
+        #ListBox_Agents_h option:nth-child(2) {
+            padding-bottom: 7.5px !important;
+        }
+
+        #ListBox_Agents_h option:last-child {
+            padding-top: 0 !important;
+            padding-bottom: 30px;
+        }
+
+span {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+    span:first-child {
+        margin-top: 0;
+    }
+
+input {
+    padding: 5px;
+    width: 250px;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 250px !important;
+}
+
+#DropDownList_Encryption_test {
+    padding: 5px;
+    width: 250px;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 35px;
+}
+
+    #DropDownList_Encryption_test:hover {
+        cursor: pointer;
+    }
+
+    #DropDownList_Encryption_test option {
+        display: block !important;
+        width: 100% !important;
+        /*padding: .25rem 1.5rem;*/
+        padding: 20px !important;
+        clear: both !important;
+        font-weight: 400 !important;
+        color: #212529 !important;
+        background-color: white;
+        border: 0 !important;
+    }
+
+        #DropDownList_Encryption_test option:hover {
+            cursor: pointer;
+        }
+
+
+#DropDownList_Encryption {
+    padding: 5px;
+    width: 250px;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 35px;
+}
+
+    #DropDownList_Encryption:hover {
+        cursor: pointer;
+    }
+
+    #DropDownList_Encryption option {
+        display: block !important;
+        width: 100% !important;
+        /*padding: .25rem 1.5rem;*/
+        padding: 20px !important;
+        clear: both !important;
+        font-weight: 400 !important;
+        color: #212529 !important;
+        background-color: white;
+        border: 0 !important;
+    }
+
+        #DropDownList_Encryption option:hover {
+            cursor: pointer;
+        }
+
+.ErrorMessage {
+    display:block !important;
+    width:100% !important;
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: .50rem 1.25rem;
+    margin-top: 15px;
+    margin-bottom: 1rem;
+    border-radius: .25rem;
+    border: 1px solid #f5c6cb;
+    text-align: center;
+    font-weight:bold;
+}
+
+    .ErrorMessage:before {
+        content: '⚠️';
+        margin-right:5px;
+    }
+
+.SuccessMessage {
+    color: #155724;
+    background-color: #d4edda;
+    padding: .75rem 1.25rem;
+    margin: 20px auto;
+    border-radius: .25rem;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid #c3e6cb;
+    text-align: center;
+}
+
+#changeBtn {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.changeColor {
+    background-color: #007bff !important;
+}
+
+.ColorDefault {
+    background-color: #6c757d !important;
+}
+
+#Button_Show_Agents {
+    width: 175px;
+    display: inline-block !important;
+    box-sizing: border-box;
+    border: none;
+    margin-left: -2px;
+    opacity: 0.8;
+    transition: 0.3s;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    color: #fff;
+    background-color: #007bff;
+    margin-right: -5px;
+    text-transform: uppercase;
+}
+
+    #Button_Show_Agents:hover {
+        opacity: 1;
+    }
+
+#Button_Show_Create {
+    width: 175px;
+    display: inline-block !important;
+    box-sizing: border-box;
+    border: none;
+    opacity: 0.8;
+    transition: 0.3s;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #6c757d;
+    text-transform: uppercase;
+}
+
+    #Button_Show_Create:hover {
+        opacity: 1;
+    }
+
+#Button_Show_Update {
+    width: 175px;
+    display: inline-block !important;
+    box-sizing: border-box;
+    border: none;
+    margin-left: -2px;
+    opacity: 0.8;
+    transition: 0.3s;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #6c757d;
+    margin-left: -5px;
+    text-transform: uppercase;
+}
+
+    #Button_Show_Update:hover {
+        opacity: 1;
+    }
+
+#Button_EncrypCode {
+    width: 175px;
+    display: inline-block !important;
+    box-sizing: border-box;
+    border: none;
+    margin-left: -2px;
+    opacity: 0.8;
+    transition: 0.3s;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    color: #fff;
+    background-color: #6c757d;
+    margin-left: -5px;
+    text-transform: uppercase;
+}
+
+    #Button_EncrypCode:hover {
+        opacity: 1;
+    }
+
+
+#ShowAgentError {
+    width:400px;
+    margin:30px auto;
+    text-align:center;
+}
+
+#ShowAgentError p:first-of-type{
+    font-size:20px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+#Label_Success {
+    display: block;
+    width: 400px;
+    text-align: center;
+    margin: 30px auto;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.col-centered {
+    margin: 0 auto;
+    float: none;
+}
+
+#div_Create input {
+    width:100% !important;
+}
+
+#div_Update input, #div_Update textarea, #DropDownList_Encryption {
+    width: 100% !important;
+}
+
+.setWidth, #Text_encruptedText, #Button_Encrypion {
+    width: 100% !important;
+}
+
+.setPadding {
+    padding: 20px;
+}
+
+#Text_encruptedTextCode {
+    min-height: 100px;
+    max-height: 100px;
+    resize: none;
+}
+
+#ListBox_Encryption {
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    overflow: auto;
+    background-color: transparent;
+    border: none !important;
+}
+
+    #ListBox_Encryption option {
+        position: relative;
+        display: block;
+        padding: .75rem 1.25rem;
+        background-color: white;
+        border: none !important;
+    }
+
+#DropDownList_Encryption {
+    margin-bottom:0;
+}
