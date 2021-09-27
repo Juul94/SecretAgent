@@ -7,12 +7,10 @@ namespace SecretAgentNew
 {
     public class Encryption
     {
-        // Instance Variables
         private string input;
         private int key;
         private char[] alphabet = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
 
-        // Constructer
         public Encryption(string input, int key)
         {
             char[] encryptedMessage = new char[input.Length];
@@ -56,7 +54,6 @@ namespace SecretAgentNew
         public string Input { get; }
         public int Key { get; }
 
-        // ToString()
         public override string ToString()
         {
             return input + " (key: " + key + ")";

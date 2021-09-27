@@ -84,7 +84,7 @@ namespace SecretAgentNew
                 {
                     check++;
 
-                    ErrorMessage_realName.Text = "Real name already exist";
+                    ErrorMessage_realName.Text = "'" + ((Agent)agentArrayList[i]).REALname + "' already exist";
                     ErrorMessage_realName.Visible = true;
                 }
             }
@@ -181,7 +181,7 @@ namespace SecretAgentNew
                     div_encryption.Visible = false;
                     div_Show.Visible = true;
 
-                    Label_Success.Text = "Success! Agent is now created";
+                    Label_Success.Text = "Success! '" + realName + "' has now been created";
                     Label_Success.Visible = true;
                 }
             }
@@ -189,8 +189,6 @@ namespace SecretAgentNew
 
         protected void Button_UpdateAgent_Click(object sender, EventArgs e)
         {
-            //Encryption enc;
-
             string realName = TextBox_realName_h.Text.ToLower();
             realName = new CultureInfo("en-US").TextInfo.ToTitleCase(realName);
 
@@ -204,7 +202,7 @@ namespace SecretAgentNew
 
             if (agentArrayList.Count == 0)
             {
-                ErrorMessage_realName_h.Text = "Agent doesn't exist";
+                ErrorMessage_realName_h.Text = "'" + realName + "' doesn't exist";
 
                 ErrorMessage_realName_h.Visible = true;
             }
@@ -291,7 +289,7 @@ namespace SecretAgentNew
                         div_encryption.Visible = false;
                         div_Show.Visible = true;
 
-                        Label_Success.Text = "Success! Agent languages is now updated";
+                        Label_Success.Text = "Success! '" + ((Agent)agentArrayList[i]).REALname + "' has updated their languages";
                         Label_Success.Visible = true;
                     }
 
@@ -313,6 +311,7 @@ namespace SecretAgentNew
         {
             if (div_Show.Visible == false)
             {
+
                 Button_Show_Agents.Attributes.Add("class", "changeColor");
                 Button_Show_Create.Attributes.Add("class", "ColorDefault");
                 Button_Show_Update.Attributes.Add("class", "ColorDefault");
@@ -323,9 +322,19 @@ namespace SecretAgentNew
                 div_Create.Visible = false;
                 div_Update.Visible = false;
                 div_encryption.Visible = false;
+
+                ErrorMessage_realName.Visible = false;
+                ErrorMessage_codeName.Visible = false;
+                ErrorMessage_lang1.Visible = false;
+                ErrorMessage_lang2.Visible = false;
+                ErrorMessage_realName_h.Visible = false;
+                ErrorMessage_lang1_h.Visible = false;
+                ErrorMessage_lang2_h.Visible = false;
+                ErrorMessage_Encrypton.Visible = false;
+                ErrorMessage_Encrypton_Key.Visible = false;
             }
 
-            if(agentArrayList.Count == 0)
+            if (agentArrayList.Count == 0)
             {
                 ShowAgentError.Visible = true;
             }
@@ -350,6 +359,16 @@ namespace SecretAgentNew
                 div_Create.Visible = true;
                 div_Update.Visible = false;
                 div_encryption.Visible = false;
+
+                ErrorMessage_realName.Visible = false;
+                ErrorMessage_codeName.Visible = false;
+                ErrorMessage_lang1.Visible = false;
+                ErrorMessage_lang2.Visible = false;
+                ErrorMessage_realName_h.Visible = false;
+                ErrorMessage_lang1_h.Visible = false;
+                ErrorMessage_lang2_h.Visible = false;
+                ErrorMessage_Encrypton.Visible = false;
+                ErrorMessage_Encrypton_Key.Visible = false;
             }
         }
 
@@ -367,6 +386,16 @@ namespace SecretAgentNew
                 div_Create.Visible = false;
                 div_Update.Visible = true;
                 div_encryption.Visible = false;
+
+                ErrorMessage_realName.Visible = false;
+                ErrorMessage_codeName.Visible = false;
+                ErrorMessage_lang1.Visible = false;
+                ErrorMessage_lang2.Visible = false;
+                ErrorMessage_realName_h.Visible = false;
+                ErrorMessage_lang1_h.Visible = false;
+                ErrorMessage_lang2_h.Visible = false;
+                ErrorMessage_Encrypton.Visible = false;
+                ErrorMessage_Encrypton_Key.Visible = false;
             }
         }
 
@@ -384,6 +413,16 @@ namespace SecretAgentNew
                 div_Create.Visible = false;
                 div_Update.Visible = false;
                 div_encryption.Visible = true;
+
+                ErrorMessage_realName.Visible = false;
+                ErrorMessage_codeName.Visible = false;
+                ErrorMessage_lang1.Visible = false;
+                ErrorMessage_lang2.Visible = false;
+                ErrorMessage_realName_h.Visible = false;
+                ErrorMessage_lang1_h.Visible = false;
+                ErrorMessage_lang2_h.Visible = false;
+                ErrorMessage_Encrypton.Visible = false;
+                ErrorMessage_Encrypton_Key.Visible = false;
             }
         }
 

@@ -3,23 +3,35 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head runat="server">
     <title>Secret Agent</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+
     <form id="form1" runat="server">
 
-        <div class="container mb-3">
+        <div class="container">
 
-            <div class="container" id="changeBtn">
-                <asp:Button ID="Button_Show_Agents" runat="server" Text="Show Agents" OnClick="Button_Show_Agents_Click"  />
-                <asp:Button ID="Button_Show_Create" runat="server" Text="Create Agent" OnClick="Button_Show_Create_Click" />
-                <asp:Button ID="Button_Show_Update" runat="server" Text="Update Agent" OnClick="Button_Show_Update_Click" />
-                <asp:Button ID="Button_EncrypCode" runat="server" Text="Encrypt Code" OnClick="Button_EncrypCode_Click" />
-            </div>
+            <nav class="navbar justify-content-between">
+
+            <div class="narbar-brand"><img src="images/logo-heading.png" /></div>
+
+                <div class="form-inline">
+
+                    <div class="container" id="changeBtn">
+                        <asp:Button ID="Button_Show_Agents" runat="server" Text="Show Agents" OnClick="Button_Show_Agents_Click" class="display-4" />
+                        <asp:Button ID="Button_Show_Create" runat="server" Text="Create Agent" OnClick="Button_Show_Create_Click" class="display-4" />
+                        <asp:Button ID="Button_Show_Update" runat="server" Text="Update Agent" OnClick="Button_Show_Update_Click" class="display-4" />
+                        <asp:Button ID="Button_EncrypCode" runat="server" Text="Encryption" OnClick="Button_EncrypCode_Click" class="display-4" />
+                    </div>
+
+                </div>
+            </nav>
 
             <asp:Label ID="Label_Success" runat="server" Text=""></asp:Label>
 
@@ -35,11 +47,9 @@
                 </div>
 
                 <div class="row setWidth">
-                    
                     <div class="col-md-8 offset-2">
                         <asp:ListBox ID="ListBox_Agents" runat="server" Rows="6" Width="100%"></asp:ListBox>
                     </div>
-
                 </div>
                 
             </div>

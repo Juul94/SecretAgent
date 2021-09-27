@@ -17,7 +17,7 @@ namespace SecretAgentNew
         private string lang1;
         private string lang2;
 
-        // Constructer
+        // Constructor
         public Agent(string realName, string codeName, string lang1, string lang2)
         {
             this.realName = realName;
@@ -29,18 +29,14 @@ namespace SecretAgentNew
             myCounter++;
         }
 
-        // Auto-generated Proporties
+        // Auto-generated Properties
         public string REALname { get => realName; }
-
         public string CODEname { get => codeName; }
-
         public string Lang1 { get => lang1; set => lang1 = value; }
-
         public string Lang2 { get => lang2; set => lang2 = value; }
-
         public int agentId { get => agentID; }
 
-        // ToString()
+        // ToString
         public override string ToString()
         {
             return "(" + agentID + ") Name: " + realName + " - Code name: " + codeName + " - Speaks: " + lang1 + " & " + lang2;

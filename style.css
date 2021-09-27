@@ -5,16 +5,22 @@
 }
 
 body {
-    background-color: #171717 !important;
+    background-color: #1d2026 !important;
     color: white !important;
+    letter-spacing:1px !important;
 }
 
-body span {
-    font-size:16px;
-}
+    body p {
+        font-size:14px;
+    }
+
+    body span {
+        font-size: 14px;
+    }
 
 .container {
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -41,6 +47,10 @@ h3 {
 }
 
 .display-3 {
+    font-size: 16px !important;
+}
+
+.display-4 {
     font-size: 16px !important;
 }
 
@@ -193,17 +203,18 @@ input {
         }
 
 .ErrorMessage {
-    display:block !important;
-    width:100% !important;
+    display: block !important;
+    width: 100% !important;
     color: #721c24;
-    background-color: #f8d7da;
     padding: .50rem 1.25rem;
     margin-top: 15px;
     margin-bottom: 1rem;
     border-radius: .25rem;
-    border: 1px solid #f5c6cb;
     text-align: center;
-    font-weight:bold;
+    font-weight: bold;
+    color: white;
+    background-color: #00b394;
+    border: 1px solid #00e3bc;
 }
 
     .ErrorMessage:before {
@@ -231,101 +242,114 @@ input {
 }
 
 .changeColor {
-    background-color: #007bff !important;
+    color: #00b394 !important;
+    text-decoration: underline !important;
 }
 
 .ColorDefault {
-    background-color: #6c757d !important;
+    color: white !important;
+    text-decoration: none !important;
 }
 
 #Button_Show_Agents {
-    width: 175px;
+    width: 150px;
     display: inline-block !important;
     box-sizing: border-box;
     border: none;
     margin-left: -2px;
-    opacity: 0.8;
     transition: 0.3s;
     padding: .375rem .75rem;
     line-height: 1.5;
-    border-top-left-radius: .25rem;
-    border-bottom-left-radius: .25rem;
     color: #fff;
-    background-color: #007bff;
-    margin-right: -5px;
-    text-transform: uppercase;
+    background-color: transparent !important;
+    text-decoration: underline;
+    color: #00b394;
+    letter-spacing: 1px;
+    font-size: 16px !important;
 }
 
     #Button_Show_Agents:hover {
-        opacity: 1;
+        color: #00b394 !important;
     }
 
 #Button_Show_Create {
-    width: 175px;
+    width: 150px;
     display: inline-block !important;
     box-sizing: border-box;
     border: none;
-    opacity: 0.8;
+    margin-left: -2px;
     transition: 0.3s;
     padding: .375rem .75rem;
     line-height: 1.5;
     color: #fff;
-    background-color: #6c757d;
-    text-transform: uppercase;
+    background-color: transparent !important;
+    letter-spacing: 1px;
+    font-size: 16px !important;
 }
 
     #Button_Show_Create:hover {
-        opacity: 1;
+        color: #00b394 !important;
     }
 
 #Button_Show_Update {
-    width: 175px;
+    width: 150px;
     display: inline-block !important;
     box-sizing: border-box;
     border: none;
     margin-left: -2px;
-    opacity: 0.8;
     transition: 0.3s;
     padding: .375rem .75rem;
     line-height: 1.5;
     color: #fff;
-    background-color: #6c757d;
-    margin-left: -5px;
-    text-transform: uppercase;
+    background-color: transparent !important;
+    letter-spacing: 1px;
+    font-size: 16px !important;
 }
 
     #Button_Show_Update:hover {
-        opacity: 1;
+        color: #00b394 !important;
     }
 
 #Button_EncrypCode {
-    width: 175px;
+    width: 150px;
     display: inline-block !important;
     box-sizing: border-box;
     border: none;
     margin-left: -2px;
-    opacity: 0.8;
     transition: 0.3s;
     padding: .375rem .75rem;
     line-height: 1.5;
-    border-top-right-radius: .25rem;
-    border-bottom-right-radius: .25rem;
     color: #fff;
-    background-color: #6c757d;
-    margin-left: -5px;
-    text-transform: uppercase;
+    background-color: transparent !important;
+    letter-spacing: 1px;
+    font-size: 16px !important;
 }
 
     #Button_EncrypCode:hover {
-        opacity: 1;
+        color: #00b394 !important;
     }
 
 
 #ShowAgentError {
-    width:400px;
-    margin:30px auto;
-    text-align:center;
+    width: 400px;
+    margin: 30px auto;
+    text-align: center;
+    color: white;
+    background-color: #00b394;
+    border: 1px solid #00e3bc;
 }
+
+input[type=submit] {
+    color: white;
+    background-color: #00b394;
+    border: 1px solid #00e3bc;
+}
+
+    input[type=submit]:hover {
+        color: white;
+        background-color: #00e3bc;
+        border: 1px solid #00b394;
+    }
 
 #ShowAgentError p:first-of-type{
     font-size:20px;
@@ -338,13 +362,13 @@ input {
     width: 400px;
     text-align: center;
     margin: 30px auto;
-    color: #155724;
-    background-color: #d4edda;
-    border-color: #c3e6cb;
     padding: .75rem 1.25rem;
     margin-bottom: 1rem;
-    border: 1px solid transparent;
     border-radius: .25rem;
+
+    color: white;
+    background-color: #00b394;
+    border: 1px solid #00e3bc;
 }
 
 .col-centered {
